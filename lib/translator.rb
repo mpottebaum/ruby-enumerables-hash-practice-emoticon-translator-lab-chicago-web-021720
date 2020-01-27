@@ -27,5 +27,5 @@ end
 
 def get_english_meaning(file, j_emoticon)
   library = load_library(file)
-  library[:get_emoticon].fetch(j_emoticon, "Sorry, that emoticon was not found")
+  library[:get_meaning].fetch(j_emoticon, "Sorry, that emoticon was not found")
 end
