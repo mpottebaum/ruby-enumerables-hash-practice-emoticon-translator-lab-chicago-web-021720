@@ -6,7 +6,7 @@ def load_library(file)
   emoticons
 end
 
-emoticons = load_library("emoticons.yml")
+emoticons = load_library("lib/emoticons.yml")
 pp emoticons
 
 def get_japanese_emoticon
