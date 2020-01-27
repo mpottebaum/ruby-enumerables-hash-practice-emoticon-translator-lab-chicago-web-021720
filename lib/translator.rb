@@ -7,11 +7,11 @@ def load_library(file)
     :get_meaning => {},
     :get_emoticon => {}
   }
-  
+  #creates key/value pairs where Japanese emoticon is key, meaning is value
   emoticons.each_pair do |meaning, e_array|
     new_hash[:get_meaning][e_array[1]] = meaning
   end
-  
+  #creates key/value pairs where English emoticon is key, Japanese is value
   emoticons.each_pair do |meaning, e_array|
     new_hash[:get_emoticon][e_array[0]] = e_array[1]
   end
@@ -19,11 +19,10 @@ def load_library(file)
   new_hash
 end
 
-emoticons = load_library("lib/emoticons.yml")
-pp emoticons
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(file, emoticon)
+  library = load_library(file)
+  library
 end
 
 def get_english_meaning
