@@ -22,7 +22,7 @@ end
 
 def get_japanese_emoticon(file, eng_emoticon)
   library = load_library(file)
-  japanese_emoticon = library[:get_emoticon].fetch(eng_emoticon, "Sorry, this is not a known emoticon.")
+  japanese_emoticon = library[:get_emoticon].fetch(eng_emoticon, "Sorry, that emoticon was not found")
 end
 
 def get_english_meaning
